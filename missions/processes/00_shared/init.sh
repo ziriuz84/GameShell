@@ -9,6 +9,7 @@ _mission_init() (
   PID=$!
   name=$(my_ps $PID | grep $PID | grep -v sh | grep "test-proc-name")
   kill -9 $PID
+  echo "NAME=$name"
   if [ -z "$name" ]
   then
     echo "$(eval_gettext "Process names should be equal to the corresponding filename for mission \$MISSION_NAME.")" >&2
