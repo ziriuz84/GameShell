@@ -46,13 +46,13 @@ check-verbose: clean
 
 ## run all the test.sh and auto.sh scripts
 tests-bash: clean
-	./utils/archive.sh -at -N "game shell (1)" missions/processes/00_shared missions/processes/02_ps_kill_signal  missions/FINAL_MISSION
-	./"game shell (1).sh" -Bdq -c 'gsh systemconfig; for _ in $$(seq 1); do gsh goal|cat; gsh test --abort; gsh auto --abort; done; gsh stat'
+	./utils/archive.sh -at -N "game shell (1)" missions/processes missions/FINAL_MISSION
+	./"game shell (1).sh" -Bdq -c 'gsh systemconfig; for _ in $$(seq 3); do gsh goal|cat; gsh test --abort; gsh auto --abort; done; gsh stat'
 
 ## run all the test.sh and auto.sh scripts
 tests-zsh: clean
-	./utils/archive.sh -at -N "game shell (1)" missions/processes/00_shared missions/processes/02_ps_kill_signal  missions/FINAL_MISSION
-	./"game shell (1).sh" -Zdq -c 'gsh systemconfig; for _ in $$(seq 1); do gsh goal|cat; gsh test --abort; gsh auto --abort; done; gsh stat'
+	./utils/archive.sh -at -N "game shell (1)" missions/processes missions/FINAL_MISSION
+	./"game shell (1).sh" -Zdq -c 'gsh systemconfig; for _ in $$(seq 3); do gsh goal|cat; gsh test --abort; gsh auto --abort; done; gsh stat'
 
 clean:
 	rm -rf i18n/*~ locale gameshell.tgz gameshell.sh gameshell-save.sh scripts/boxes-data.awk
