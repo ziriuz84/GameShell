@@ -21,7 +21,7 @@ $PS
   Elenca i processi che sono attualmente eseguiti dalla shell.
 
 kill [OPTIONS] N
-  Manda il segnale di terminazione al processo N.
+  Manda il segnale di cessazione al processo N.
 
   Opzioni utili:
     -s SIGNAL   sceglie il nome del segnale
@@ -37,6 +37,6 @@ Dettagli
 --------
 
 In modo predefinito ``kill`` manda il segnale "TERM" ai processi 
-(TERM sta per "terminazione")
+(TERM sta per "cessazione")
 I processi possono ignorare alcuni segnali, ma il segnale "KILL"
 non può essere ignorato!

@@ -31,5 +31,5 @@ pstree PID
          shell e può essere fornita come PID.
 
 kill N
-  Manda il segnale di terminazione al processo numero N.
+  Manda il segnale di cessazione al processo numero N.
   Nota: N è chiamato PID, o "identificatore di processo".

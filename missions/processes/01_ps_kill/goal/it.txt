@@ -18,7 +18,7 @@ $PS
   Elenca i processi che sono attualmente eseguiti dalla shell.
 
 kill N
-  Manda il segnale di terminazione al processo numero N.
+  Manda il segnale di cessazione al processo numero N.
   Nota: N è chiamato PID, o "identificatore di processo".
 
 clear
