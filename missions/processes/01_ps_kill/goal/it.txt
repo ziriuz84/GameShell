@@ -22,6 +22,6 @@ kill N
   Nota: N è chiamato PID, o "identificatore di processo".
 
 clear
-  Pulisce lo schermo.
+  Pulisce la schermata del terminale.
   La combinazione "Control-L" fa la stessa cosa ed è spesso
   più veloce da usare nel terminale.
