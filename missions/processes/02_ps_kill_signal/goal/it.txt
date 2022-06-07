@@ -20,7 +20,7 @@ Comandi utili
 $PS
   Elenca i processi che sono attualmente eseguiti dalla shell.
 
-kill [OPTIONS] N
+kill [OPZIONI] N
   Manda il segnale di cessazione al processo N.
 
   Opzioni utili:
